@@ -17,7 +17,7 @@ const App = () => {
           <Link to={'/AboutAuthor'} exact component={AboutAuthor} />              
         </Navbar>
         <Outlet/>
-      <div className="App">
+      <div className="App" >
         <Header/>
         <Home/>
       </div>

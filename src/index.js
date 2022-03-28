@@ -12,9 +12,9 @@ const rootElement = document.getElementById("root")
 render (
   <BrowserRouter>
     <Routes>
-      <Route path='/' element={<App />} />
-      <Route path='aboutApp' element={<AboutApp/>} />
-      <Route path='aboutAuthor' element={<AboutAuthor/>} />
+      <Route path='/' element={ <App /> } />
+      <Route path='aboutApp' element={ <AboutApp/> } />
+      <Route path='aboutAuthor' element={ <AboutAuthor/> } />
       <Route path="*"
       element={
         <main style={{ padding: "1rem" }}>
