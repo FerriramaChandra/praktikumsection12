@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 import './App.css';
 import AboutAuthor from './components/routes/aboutAuthor';
 import AboutApp from './components/routes/aboutApp';
@@ -10,22 +10,18 @@ import Header from "./components/pages/Header"
 
 const App = () => {
   return (
-    <>
-    <Router>
-      <Navbar />
-      <Switch>
-        <Route path={'/'}/>
-        <Route path={'/AboutApp'} exact component={AboutApp} />
-        <Route path={'/AboutAuthor'} exact component={AboutAuthor} />
-      </Switch>
-      
-    </Router>
-    
-    <div className="App">
-      <Header/>
-      <Home/>
+    <div>
+        <Navbar>
+          <Link to={'/'}/>
+          <Link to={'/AboutApp'} exact component={AboutApp} />
+          <Link to={'/AboutAuthor'} exact component={AboutAuthor} />              
+        </Navbar>
+        <Outlet/>
+      <div className="App">
+        <Header/>
+        <Home/>
+      </div>
     </div>
-    </>
   );
 }
 
