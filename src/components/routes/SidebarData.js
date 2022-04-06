@@ -11,13 +11,13 @@ export const SidebarData = [
     },
     {
         title: "About",
-        path: "/",
+        path: "/AboutApp",
         icon: <FcIcons.FcAbout/>,
         cName: 'nav-text'
     },
     {
         title: "About Author",
-        path: "/",
+        path: "/AboutAuthor",
         icon: <IoIcons.IoMdPeople/>,
         cName: 'nav-text'
     },
